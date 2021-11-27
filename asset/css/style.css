@@ -4,6 +4,7 @@
     --secondary-color: #FFFF33;
     --grey: #AAAAAA;
     --white: white;
+    --pink: #FF66FF;
 }
 
 * {
@@ -52,7 +53,7 @@ html {
 .menu-wrap {
     /* kích thước màn hình */
     max-width: 1366px;
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     /* cho nó nằm ở giữa */
     margin: auto;
     /* để cho conten nằm ở giữa */
@@ -65,7 +66,7 @@ html {
 .logo {
     font-size: 2rem;
     font-weight: 800;
-    color: var(--white);
+    color: var(--primary-color);
 }
 
 .menu {
@@ -79,7 +80,7 @@ html {
     margin-left: 2rem;
     padding: 0.5rem 1.5rem;
     font-weight: 600;
-    color: var(--white);
+    color: var(--primary-color);
     border-radius: 1rem;
     /* hieu ung nhe nhang dua vao va nhe nhang dua */
     transition: .5s ease-in-out;
@@ -88,8 +89,8 @@ html {
 
 .menu-items:hover,
 .menu-item.active {
-    color: var(--primary-color);
-    background-color: var(--background-color);
+    color: var(--background-color);
+    background-color: var(--grey);
     border-radius: 1rem;
 }
 
@@ -105,7 +106,7 @@ html {
     font-size: 2rem;
     /* con chuot bien thanh canh tay */
     cursor: pointer;
-    color: var(--background-color);
+    color: var(--primary-color);
     /* hieu ung nhe nhang dua vao va nhe nhang dua */
     transition: 0.5 ease-in-out;
 }
@@ -114,10 +115,179 @@ html {
 /* hieu ung hover */
 
 .cart-btn:hover {
-    background-color: var(--background-color);
+    background-color: var(--grey);
     border-radius: 1rem;
-    color: var(--grey);
+    color: var(--background-color);
 }
 
 
 /* kết thúc body nav */
+
+
+/* style  */
+
+.fullheight {
+    /* full chieu cao man hinh */
+    height: 100vh;
+}
+
+
+/* truowsc laf dungf nhieeuf cais fex thi baay
+giowf dung 1 cai class align-item: center */
+
+.align-item-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* style cho anh */
+
+.bg-img {
+    background-position: center;
+    /* anh vua kich thuoc man hinh */
+    background-size: cover;
+    /* khoong nhana doi anh */
+    background-repeat: no-repeat;
+}
+
+
+/* chuot kh di theo */
+
+.bg-img-fixed {
+    background-attachment: fixed;
+}
+
+
+/* bojc 1 cai trang wwed laij */
+
+.container {
+    /* do dai */
+    width: 100%;
+    max-width: 1366px;
+    /* noi dung nam o giua */
+    margin: 0 auto;
+}
+
+
+/* de boc lai may thang colum ta dung class row */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* ket thuc style */
+
+
+/* style col 1-12 */
+
+
+/* dung de chinh cho tung kich thuoc man hinh nho hon 600 px la sai dc */
+
+@media only screen and (max-width:600px) {
+    .col-xs-1 {
+        width: 8.33%;
+    }
+    .col-xs-2 {
+        width: 16.66%;
+    }
+    .col-xs-3 {
+        width: 25%;
+    }
+    .col-xs-4 {
+        width: 33.33%;
+    }
+    .col-xs-5 {
+        width: 41.66%;
+    }
+    .col-xs-6 {
+        width: 50%;
+    }
+    .col-xs-7 {
+        width: 58.33%;
+    }
+    .col-xs-8 {
+        width: 66.66%;
+    }
+    .col-xs-9 {
+        width: 75%;
+    }
+    .col-xs-10 {
+        width: 83.33%;
+    }
+    .col-xs-11 {
+        width: 91.66%;
+    }
+    .col-xs-12 {
+        width: 100%;
+    }
+}
+
+
+/* de pading cho tat ca cac column */
+
+[class*="col-"] {
+    /* pading cho tat ca cac column 1-12 */
+    padding: 1rem;
+}
+
+
+/* viet cac cai column 1-12, 100/12*(1 or 12)*/
+
+
+/* ti le cac cot */
+
+.col-1 {
+    width: 8.33%;
+    /* pading cho tat ca cac column 1-12 */
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+/* ket thuc style các thuộc tính cho 1 trang wed */
