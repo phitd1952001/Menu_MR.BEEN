@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #FF0000;
+    --background-color: #FFFFFF;
+    --secondary-color: #FFFF33;
+    --grey: #AAAAAA;
+    --white: white;
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* body nav */
+
+
+/* reset lại tag a */
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+body,
+html {
+    background-color: var(--background-color);
+    /* cuộn lên xuống qua trang */
+    scroll-behavior: smooth;
+    /* vị trí ban đầu */
+    position: relative;
+    /* không tràn ra thanh ngang */
+    overflow-x: hidden;
+}
+
+.nav {
+    /* cho thanh công cụ đứng 1 chỗ không cho cuộn theo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* chiều rộng tùy thuộc vào kích thuốc màn hình*/
+    width: 100%;
+    /* thanh công cụ trên */
+    z-index: 9999;
+    background-color: var(--background-color);
+    /* đổ xanh lá xanh dương độ trong suốt, phản chiếu top right bottom left */
+    box-shadow: rgba(99, 99, 99, 0, 2) 0px 2px 8px 0px;
+}
+
+.menu-wrap {
+    /* kích thước màn hình */
+    max-width: 1366px;
+    background-color: var(--primary-color);
+    /* cho nó nằm ở giữa */
+    margin: auto;
+    /* để cho conten nằm ở giữa */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+}
+
+.menu-items {
+    /* tách ô ở giữa trang chủ,menu, liên hệ */
+    margin-left: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    color: var(--white);
+    border-radius: 1rem;
+    /* hieu ung nhe nhang dua vao va nhe nhang dua */
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.menu-items:hover,
+.menu-item.active {
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    border-radius: 1rem;
+}
+
+.cart-btn {
+    /* chieu rong, chieu cao */
+    width: 3rem;
+    height: 3rem;
+    /* cho no nam giua cai o vuong */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* kich thuoc */
+    font-size: 2rem;
+    /* con chuot bien thanh canh tay */
+    cursor: pointer;
+    color: var(--background-color);
+    /* hieu ung nhe nhang dua vao va nhe nhang dua */
+    transition: 0.5 ease-in-out;
+}
+
+
+/* hieu ung hover */
+
+.cart-btn:hover {
+    background-color: var(--background-color);
+    border-radius: 1rem;
+    color: var(--grey);
+}
+
+
+/* kết thúc body nav */
