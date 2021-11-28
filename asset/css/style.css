@@ -90,7 +90,7 @@ html {
 .menu-items:hover,
 .menu-item.active {
     color: var(--background-color);
-    background-color: var(--grey);
+    background-color: var(--primary-color);
     border-radius: 1rem;
 }
 
@@ -115,7 +115,7 @@ html {
 /* hieu ung hover */
 
 .cart-btn:hover {
-    background-color: var(--grey);
+    background-color: var(--primary-color);
     border-radius: 1rem;
     color: var(--background-color);
 }
@@ -310,13 +310,15 @@ giowf dung 1 cai class align-item: center */
 
 .slogan p {
     color: var(--white);
-    font-weight: 300;
+    font-weight: 400;
     font-size: .96rem;
+    border-radius: 2rem;
+    text-align: center;
 }
 
 .slogan button {
     margin: 3rem 0;
-    padding: 1rem 5rem;
+    padding: 1rem 5.8rem;
     /* lm noi bat duong vien */
     outline: none;
     /* duong vien */
@@ -358,10 +360,20 @@ giowf dung 1 cai class align-item: center */
 
 .food-menu h1 {
     color: var(--grey);
+    text-align: center;
+    padding: 0.125rem;
+    font-size: 1.85rem;
 }
 
 .food-menu p {
     margin: 2rem 0;
+    align-items: center;
+    text-align: center;
+}
+
+.cart-btn:hover {
+    background-color: #FF0000;
+    color: var(--background-color);
 }
 
 
@@ -455,6 +467,14 @@ giowf dung 1 cai class align-item: center */
 
 .item-info>div:first-child {
     text-align: left;
+}
+
+.primary-color {
+    color: var(--primary-color)
+}
+
+b {
+    color: var(--grey);
 }
 
 
